@@ -3,10 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Landing Page</title>
     <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="bg-gray-400 text-white p-4">
-    Hello JI
+<body class="">
+    <!-- Navbar -->
+
+    <nav class="p-4 bg-white shadow flex items-center justify-between">
+        <a class="flex gap-2 items-center" href="#" >
+            <img class="h-8 rounded-full" src="https://picsum.photos/id/1/200/300" alt="Logo">
+            <span class="font-display">ToDesktop</span>
+        </a>
+        <div class="lg:flex gap-10 text-sm hidden" id="nav-items">
+            <a class="font-display hover:text-slate-400" href="#">Pricing</a>
+            <a class="font-display hover:text-slate-400" href="#">Docs</a>
+            <a class="font-display hover:text-slate-400" href="#">Changelog</a>
+            <a class="font-display hover:text-slate-400" href="#">Blog</a>
+            <a class="font-display hover:text-slate-400" href="#">Login</a>
+        </div>
+        <button class="border border-gray-300 rounded px-4 py-2">
+            <!-- <img src="" alt=""> -->
+             <i class="fa-solid fa-plane text-gray-500"></i>
+             <span>Electron Developer</span>
+             <i class="fa-solid fa-arrow-right text-gray-500"></i>
+        </button>
+        <button onclick="handleMenu()"><i class="fa-solid fa-bars text-gray-500"></i></button>
+    </nav>
 </body>
 </html>
