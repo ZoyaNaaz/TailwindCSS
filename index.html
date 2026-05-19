@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="./src/output.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body class="">
     <!-- Navbar -->
-
     <nav class="p-4 bg-white shadow flex items-center justify-between">
-        <a class="flex gap-2 items-center" href="#" >
-            <img class="h-8 rounded-full" src="https://picsum.photos/id/1/200/300" alt="Logo">
+        <a class="flex gap-1 items-center" href="#">
+            <img class="h-8 rounded-full" src="./assets/asset 0.png" alt="Logo">
             <span class="font-display">ToDesktop</span>
         </a>
         <div class="lg:flex gap-10 text-sm hidden" id="nav-items">
@@ -22,13 +25,41 @@
             <a class="font-display hover:text-slate-400" href="#">Blog</a>
             <a class="font-display hover:text-slate-400" href="#">Login</a>
         </div>
-        <button class="border border-gray-300 rounded px-4 py-2">
+        <button class="hidden lg:block border border-gray-300 rounded px-4 py-2">
             <!-- <img src="" alt=""> -->
-             <i class="fa-solid fa-plane text-gray-500"></i>
-             <span>Electron Developer</span>
-             <i class="fa-solid fa-arrow-right text-gray-500"></i>
+            <i class="fa-solid fa-plane text-gray-500"></i>
+            <span>Electron Developer</span>
+            <i class="fa-solid fa-arrow-right text-gray-500"></i>
         </button>
-        <button onclick="handleMenu()"><i class="fa-solid fa-bars text-gray-500"></i></button>
+        <button class="lg:hidden" onclick="handleMenu()"><i class="fa-solid fa-bars text-gray-500"></i></button>
+        <!-- nav dialog -->
+        <div class="hidden w-full h-full bg-white absolute inset-0" id="nav-dialog">
+            <div id="upper-nav-dialog" class="flex justify-between items-center p-4 shadow">
+                <a class="flex gap-1 items-center" href="#">
+                    <img class="h-8 rounded-full" src="./assets/asset 0.png" alt="Logo">
+                    <span class="font-display">ToDesktop</span>
+                </a>
+                <i class="fa-solid fa-xmark" onclick="handleMenu()"></i>
+            </div>
+            <div id="middle-nav-dialog" class="flex flex-col p-4">
+                <a class="font-display px-4 py-2 rounded-lg hover:bg-slate-50" href="#">Pricing</a>
+                <a class="font-display px-4 py-2 rounded-lg hover:bg-slate-50" href="#">Docs</a>
+                <a class="font-display px-4 py-2 rounded-lg hover:bg-slate-50" href="#">Changelog</a>
+                <a class="font-display px-4 py-2 rounded-lg hover:bg-slate-50" href="#">Blog</a>
+                <a class="font-display px-4 py-2 rounded-lg hover:bg-slate-50" href="#">Login</a>
+            </div>
+            <div class="h-[1px] ml-4 bg-gray-200"></div>
+            <button class="w-full rounded mt-4 px-4 py-2 text-left hover:bg-slate-50 ">
+                <!-- <img src="" alt=""> -->
+                <i class="fa-solid fa-plane text-gray-500"></i>
+                <span class="text-left">Electron Developer</span>
+                <i class="fa-solid fa-arrow-right text-gray-500"></i>
+            </button>
+
+        </div>
     </nav>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
