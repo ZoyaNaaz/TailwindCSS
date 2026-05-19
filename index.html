@@ -13,17 +13,17 @@
 
 <body class="">
     <!-- Navbar -->
-    <nav class="p-3 bg-white shadow-xl flex items-center justify-between">
+    <nav class="p-3 bg-white flex items-center justify-between relative z-50 shadow-md">
         <a class="flex gap-2 items-center" href="#">
             <img class="rounded-full" src="./assets/asset 0.png" alt="Logo">
             <span class="font-display font-medium text-lg">ToDesktop</span>
         </a>
         <div class="lg:flex gap-10 text-sm hidden" id="nav-items">
-            <a class="font-display hover:text-primary" href="#">Pricing</a>
-            <a class="font-display hover:text-primary" href="#">Docs</a>
-            <a class="font-display hover:text-primary" href="#">Changelog</a>
-            <a class="font-display hover:text-primary" href="#">Blog</a>
-            <a class="font-display hover:text-primary" href="#">Login</a>
+            <a class="font-display font-medium hover:text-primary" href="#">Pricing</a>
+            <a class="font-display font-medium hover:text-primary" href="#">Docs</a>
+            <a class="font-display font-medium hover:text-primary" href="#">Changelog</a>
+            <a class="font-display font-medium hover:text-primary" href="#">Blog</a>
+            <a class="font-display font-medium hover:text-primary" href="#">Login</a>
         </div>
         <button class="hidden lg:block border border-gray-300 rounded px-4 py-2">
             <!-- <img src="" alt=""> -->
@@ -33,7 +33,7 @@
         </button>
         <button class="lg:hidden" onclick="handleMenu()"><i class="fa-solid fa-bars text-gray-500"></i></button>
         <!-- nav dialog -->
-        <div class="hidden w-full h-full bg-white absolute inset-0" id="nav-dialog">
+        <div class="hidden w-full h-full bg-white absolute inset-0 z-10" id="nav-dialog">
             <div id="upper-nav-dialog" class="flex justify-between items-center p-3 shadow">
                 <a class="flex gap-2 items-center" href="#">
                     <img class="rounded-full" src="./assets/asset 0.png" alt="Logo">
@@ -95,10 +95,10 @@
                 </div>
                 <div class="mt-8 flex flex-col gap-4 sm:flex-row">
                     <button
-                        class="font-body font-medium bg-[#464CF2] text-white text-sm rounded-md px-4 py-3 hover:bg-blue-600">Download
+                        class="font-body font-medium bg-[#464CF2] text-white text-sm rounded-md px-4 py-3 hover:bg-blue-600 transition duration-300">Download
                         Now</button>
                     <button
-                        class="font-body font-medium border border-gray-400 text-sm rounded-md px-4 py-3 hover:border-gray-600">Read
+                        class="font-body font-medium border border-gray-400 text-sm rounded-md px-4 py-3 hover:border-gray-600 transition duration-300">Read
                         Docs</button>
                 </div>
             </div>
