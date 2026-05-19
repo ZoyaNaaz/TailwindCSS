@@ -6,3 +6,8 @@
     --font-body: "Inter", sans-serif;
     --color-primary: #3238F2;
 }
+@layer base{
+    h1, h2, h3{
+        @apply font-display font-medium text-gray-800;
+    }
+}
