@@ -11,6 +11,6 @@
         @apply font-display font-medium text-gray-800;
     }
     .container{
-        @apply max-w-7xl px-6 py-12 mx-auto lg:mx-auto lg:px-8 lg:mt-32;
+        @apply max-w-7xl px-6 py-12 mt-8 mx-auto lg:mx-auto lg:px-8 lg:mt-10;
     }
 }
