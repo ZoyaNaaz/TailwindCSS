@@ -71,3 +71,8 @@ This project is inspired by Anuj Kumar, doesn't include a license file.
 ```
 https://zoyanaaz.github.io/TailwindCSS/
 ```
+
+## Connect
+```
+https://www.linkedin.com/in/zoya-naaz-z123/
+```
