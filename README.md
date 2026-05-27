@@ -69,5 +69,5 @@ This project is inspired by Anuj Kumar, doesn't include a license file.
 ## Live Link
 
 ```
-[View Website](https://zoyanaaz.github.io/TailwindCSS/)
+https://zoyanaaz.github.io/TailwindCSS/
 ```
